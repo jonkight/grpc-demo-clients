@@ -17,4 +17,4 @@ jobs:
       - run: docker run -v "$(pwd):/work" uber/prototool:latest prototool break check
       - run: docker run -v "$(pwd):/work" uber/prototool:latest prototool format -f -w
       - run: docker run -v "$(pwd):/work" uber/prototool:latest prototool generate proto
-      - run: sudo git diff --quiet && git diff --staged --quiet || sudo git commit -am 'Generating proto clients' || sudo git push
+      - run: sudo git add --all gen/ || sudo git diff --quiet && git diff --staged --quiet || sudo git commit -am 'Generating proto clients' || sudo git push
