@@ -8,4 +8,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: docker run namely/prototool version
+      - run: rm -rf gen
+      - run: docker run -v "$(pwd):/work" uber/prototool:latest prototool break check
+      - run: docker run -v "$(pwd):/work" uber/prototool:latest prototool format -f -w
+      - run: docker run -v "$(pwd):/work" uber/prototool:latest prototool generate proto
+      - run: git status
