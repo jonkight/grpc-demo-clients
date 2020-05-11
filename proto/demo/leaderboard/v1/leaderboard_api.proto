@@ -1,0 +1,79 @@
+// Copyright (c) 2020 jonkight.
+
+syntax = "proto3";
+
+package demo.leaderboard.v1;
+
+option csharp_namespace = "Demo.Leaderboard.V1";
+option go_package = "leaderboardv1";
+option java_multiple_files = true;
+option java_outer_classname = "LeaderboardApiProto";
+option java_package = "com.demo.leaderboard.v1";
+option objc_class_prefix = "DLX";
+option php_namespace = "Demo\\Leaderboard\\V1";
+
+import "demo/leaderboard/v1/leaderboard.proto";
+
+// Service API for interacting with leaderboards.
+service LeaderboardAPI {
+  // Creates a leaderboard.
+  rpc CreateLeaderboard(CreateLeaderboardRequest) returns (CreateLeaderboardResponse);
+  // Retrieves a leaderboard definition.
+  rpc GetLeaderboard(GetLeaderboardRequest) returns (GetLeaderboardResponse);
+  // Deletes a leaderboard definition.
+  rpc DeleteLeaderboard(DeleteLeaderboardRequest) returns (DeleteLeaderboardResponse);
+  // Submit scores to a leaderboard.
+  rpc SubmitScores(SubmitScoresRequest) returns (SubmitScoresResponse);
+  // Retrieves the scores from a leaderboard.
+  rpc GetScores(GetScoresRequest) returns (GetScoresResponse);
+  // Resets a leaderboard by removing all scores.
+  rpc ResetScores(ResetScoresRequest) returns (ResetScoresResponse);
+}
+
+message CreateLeaderboardRequest {
+  // Leaderboard definition metadata.
+  demo.leaderboard.v1.Leaderboard leaderboard = 1;
+}
+
+message CreateLeaderboardResponse {}
+
+message GetLeaderboardRequest {
+  // Unique identifier for the leaderboard.
+  string laderboard_id = 1;
+}
+
+message GetLeaderboardResponse {
+  // Leaderboard definition metadata.
+  demo.leaderboard.v1.Leaderboard leaderboard = 1;
+}
+
+message DeleteLeaderboardRequest {
+  // Unique identifier for the leaderboard.
+  string leaderboard_id = 1;
+}
+
+message DeleteLeaderboardResponse {}
+
+message GetScoresRequest {
+  // Unique identifier for the leaderboard.
+  string leaderboard_id = 1;
+}
+
+message GetScoresResponse {
+  // Leaderboard scores in order of ranking based on the rank order.
+  repeated demo.leaderboard.v1.LeaderboardScore rankings = 1;
+}
+
+message SubmitScoresRequest {
+  // Score the user achieved.
+  demo.leaderboard.v1.LeaderboardScore score = 1;
+}
+
+message SubmitScoresResponse {}
+
+message ResetScoresRequest {
+  // Unique identifier for the leaderboard.
+  string leaderboard_id = 1;
+}
+
+message ResetScoresResponse {}
