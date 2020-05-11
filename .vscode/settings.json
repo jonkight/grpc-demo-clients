@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "[proto3]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    }
+}

@@ -1,0 +1,42 @@
+// Copyright (c) 2020 jonkight.
+
+syntax = "proto3";
+
+package demo.leaderboard.v1;
+
+option csharp_namespace = "Demo.Leaderboard.V1";
+option go_package = "leaderboardv1";
+option java_multiple_files = true;
+option java_outer_classname = "LeaderboardProto";
+option java_package = "com.demo.leaderboard.v1";
+option objc_class_prefix = "DLX";
+option php_namespace = "Demo\\Leaderboard\\V1";
+
+import "google/protobuf/wrappers.proto";
+
+// Represents the sort order for a leaderboard ranking.
+enum RankOrder {
+  RANK_ORDER_INVALID = 0;
+  // Ascending order (e.g. 1 -> 10).
+  RANK_ORDER_ASC = 1;
+  // Descending order (e.g. 10 -> 1).
+  RANK_ORDER_DESC = 2;
+}
+
+// The definition for a leaderboard.
+message Leaderboard {
+  // Unique identifier for the leaderboard.
+  string leaderboard_id = 1;
+  // Rank order of the leaderboard. (default: ASC)
+  RankOrder rank_order = 2;
+  // Max amount of scores a leaderboard can hold. (default: 10, min: 3, max: 100) fafsaf a
+  google.protobuf.UInt32Value max_size = 3;
+}
+
+// A users score for a leaderboard.
+message LeaderboardScore {
+  // Unique identifier for the user.
+  string user_id = 1;
+  // Score the user achieved.
+  google.protobuf.UInt32Value score = 2;
+}
