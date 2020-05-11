@@ -1,6 +1,11 @@
 name: Generate Protobuf & gRPC Stubs
 
-on: [push, pull_request]
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - releases/*
 
 jobs:
   vm-job:
