@@ -1,11 +1,6 @@
 name: Generate Protobuf & gRPC Stubs
 
-on:
-  pull_request:
-  push:
-    branches:
-      - master
-      - releases/*
+on: pull_request
 
 jobs:
   vm-job:
@@ -24,4 +19,4 @@ jobs:
           sudo git config --local user.email "action@github.com"
           sudo git config --local user.name "GitHub Action"
           sudo git add --all gen/
-          sudo git diff --quiet && git diff --staged --quiet || sudo git commit -m 'Generating stubs' && sudo git push
+          sudo git diff --quiet && git diff --staged --quiet || sudo git commit -m 'Generating stubs' && sudo echo ${{ github.head_ref }}
