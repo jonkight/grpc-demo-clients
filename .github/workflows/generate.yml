@@ -13,8 +13,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: rm -rf gen
-      - run: docker run -v "$(pwd):/work" uber/prototool:latest prototool break check
-      - run: docker run -v "$(pwd):/work" uber/prototool:latest prototool format -f -w
-      - run: docker run -v "$(pwd):/work" uber/prototool:latest prototool generate proto
-      - run: sudo git add --all gen/ || sudo git diff --quiet && git diff --staged --quiet || sudo git commit -am 'Generating proto clients' || sudo git push
+      - name: Prototool break check, format, and generate
+        run: |
+          rm -rf gen
+          docker run -v "$(pwd):/work" uber/prototool:latest prototool break check
+          docker run -v "$(pwd):/work" uber/prototool:latest prototool format -f -w
+          docker run -v "$(pwd):/work" uber/prototool:latest prototool generate proto
+      - name: Update the branch if there are changes
+        run: |
+          sudo git config --local user.email "action@github.com"
+          sudo git config --local user.name "GitHub Action"
+          sudo git add --all gen/
+          sudo git diff --quiet && git diff --staged --quiet || sudo git commit -m 'Generating stubs' && sudo git push
