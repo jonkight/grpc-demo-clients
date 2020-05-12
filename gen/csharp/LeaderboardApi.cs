@@ -28,42 +28,42 @@ namespace Demo.Leaderboard.V1 {
             "ZGVtby5sZWFkZXJib2FyZC52MRolZGVtby9sZWFkZXJib2FyZC92MS9sZWFk",
             "ZXJib2FyZC5wcm90byJRChhDcmVhdGVMZWFkZXJib2FyZFJlcXVlc3QSNQoL",
             "bGVhZGVyYm9hcmQYASABKAsyIC5kZW1vLmxlYWRlcmJvYXJkLnYxLkxlYWRl",
-            "cmJvYXJkIhsKGUNyZWF0ZUxlYWRlcmJvYXJkUmVzcG9uc2UiLgoVR2V0TGVh",
-            "ZGVyYm9hcmRSZXF1ZXN0EhUKDWxhZGVyYm9hcmRfaWQYASABKAkiTwoWR2V0",
-            "TGVhZGVyYm9hcmRSZXNwb25zZRI1CgtsZWFkZXJib2FyZBgBIAEoCzIgLmRl",
-            "bW8ubGVhZGVyYm9hcmQudjEuTGVhZGVyYm9hcmQiMgoYRGVsZXRlTGVhZGVy",
-            "Ym9hcmRSZXF1ZXN0EhYKDmxlYWRlcmJvYXJkX2lkGAEgASgJIhsKGURlbGV0",
-            "ZUxlYWRlcmJvYXJkUmVzcG9uc2UiKgoQR2V0U2NvcmVzUmVxdWVzdBIWCg5s",
-            "ZWFkZXJib2FyZF9pZBgBIAEoCSJMChFHZXRTY29yZXNSZXNwb25zZRI3Cghy",
-            "YW5raW5ncxgBIAMoCzIlLmRlbW8ubGVhZGVyYm9hcmQudjEuTGVhZGVyYm9h",
-            "cmRTY29yZSJLChNTdWJtaXRTY29yZXNSZXF1ZXN0EjQKBXNjb3JlGAEgASgL",
-            "MiUuZGVtby5sZWFkZXJib2FyZC52MS5MZWFkZXJib2FyZFNjb3JlIhYKFFN1",
-            "Ym1pdFNjb3Jlc1Jlc3BvbnNlIiwKElJlc2V0U2NvcmVzUmVxdWVzdBIWCg5s",
-            "ZWFkZXJib2FyZF9pZBgBIAEoCSIVChNSZXNldFNjb3Jlc1Jlc3BvbnNlMoYF",
-            "Cg5MZWFkZXJib2FyZEFQSRJyChFDcmVhdGVMZWFkZXJib2FyZBItLmRlbW8u",
-            "bGVhZGVyYm9hcmQudjEuQ3JlYXRlTGVhZGVyYm9hcmRSZXF1ZXN0Gi4uZGVt",
-            "by5sZWFkZXJib2FyZC52MS5DcmVhdGVMZWFkZXJib2FyZFJlc3BvbnNlEmkK",
-            "DkdldExlYWRlcmJvYXJkEiouZGVtby5sZWFkZXJib2FyZC52MS5HZXRMZWFk",
-            "ZXJib2FyZFJlcXVlc3QaKy5kZW1vLmxlYWRlcmJvYXJkLnYxLkdldExlYWRl",
-            "cmJvYXJkUmVzcG9uc2UScgoRRGVsZXRlTGVhZGVyYm9hcmQSLS5kZW1vLmxl",
-            "YWRlcmJvYXJkLnYxLkRlbGV0ZUxlYWRlcmJvYXJkUmVxdWVzdBouLmRlbW8u",
-            "bGVhZGVyYm9hcmQudjEuRGVsZXRlTGVhZGVyYm9hcmRSZXNwb25zZRJjCgxT",
-            "dWJtaXRTY29yZXMSKC5kZW1vLmxlYWRlcmJvYXJkLnYxLlN1Ym1pdFNjb3Jl",
-            "c1JlcXVlc3QaKS5kZW1vLmxlYWRlcmJvYXJkLnYxLlN1Ym1pdFNjb3Jlc1Jl",
-            "c3BvbnNlEloKCUdldFNjb3JlcxIlLmRlbW8ubGVhZGVyYm9hcmQudjEuR2V0",
-            "U2NvcmVzUmVxdWVzdBomLmRlbW8ubGVhZGVyYm9hcmQudjEuR2V0U2NvcmVz",
-            "UmVzcG9uc2USYAoLUmVzZXRTY29yZXMSJy5kZW1vLmxlYWRlcmJvYXJkLnYx",
-            "LlJlc2V0U2NvcmVzUmVxdWVzdBooLmRlbW8ubGVhZGVyYm9hcmQudjEuUmVz",
-            "ZXRTY29yZXNSZXNwb25zZUJxChdjb20uZGVtby5sZWFkZXJib2FyZC52MUIT",
-            "TGVhZGVyYm9hcmRBcGlQcm90b1ABWg1sZWFkZXJib2FyZHYxogIDRExYqgIT",
-            "RGVtby5MZWFkZXJib2FyZC5WMcoCE0RlbW9cTGVhZGVyYm9hcmRcVjFiBnBy",
-            "b3RvMw=="));
+            "cmJvYXJkIhsKGUNyZWF0ZUxlYWRlcmJvYXJkUmVzcG9uc2UiLwoVR2V0TGVh",
+            "ZGVyYm9hcmRSZXF1ZXN0EhYKDmxlYWRlcmJvYXJkX2lkGAEgASgJIk8KFkdl",
+            "dExlYWRlcmJvYXJkUmVzcG9uc2USNQoLbGVhZGVyYm9hcmQYASABKAsyIC5k",
+            "ZW1vLmxlYWRlcmJvYXJkLnYxLkxlYWRlcmJvYXJkIjIKGERlbGV0ZUxlYWRl",
+            "cmJvYXJkUmVxdWVzdBIWCg5sZWFkZXJib2FyZF9pZBgBIAEoCSIbChlEZWxl",
+            "dGVMZWFkZXJib2FyZFJlc3BvbnNlIioKEEdldFNjb3Jlc1JlcXVlc3QSFgoO",
+            "bGVhZGVyYm9hcmRfaWQYASABKAkiTAoRR2V0U2NvcmVzUmVzcG9uc2USNwoI",
+            "cmFua2luZ3MYASADKAsyJS5kZW1vLmxlYWRlcmJvYXJkLnYxLkxlYWRlcmJv",
+            "YXJkU2NvcmUiSwoTU3VibWl0U2NvcmVzUmVxdWVzdBI0CgVzY29yZRgBIAEo",
+            "CzIlLmRlbW8ubGVhZGVyYm9hcmQudjEuTGVhZGVyYm9hcmRTY29yZSIWChRT",
+            "dWJtaXRTY29yZXNSZXNwb25zZSIsChJSZXNldFNjb3Jlc1JlcXVlc3QSFgoO",
+            "bGVhZGVyYm9hcmRfaWQYASABKAkiFQoTUmVzZXRTY29yZXNSZXNwb25zZTKG",
+            "BQoOTGVhZGVyYm9hcmRBUEkScgoRQ3JlYXRlTGVhZGVyYm9hcmQSLS5kZW1v",
+            "LmxlYWRlcmJvYXJkLnYxLkNyZWF0ZUxlYWRlcmJvYXJkUmVxdWVzdBouLmRl",
+            "bW8ubGVhZGVyYm9hcmQudjEuQ3JlYXRlTGVhZGVyYm9hcmRSZXNwb25zZRJp",
+            "Cg5HZXRMZWFkZXJib2FyZBIqLmRlbW8ubGVhZGVyYm9hcmQudjEuR2V0TGVh",
+            "ZGVyYm9hcmRSZXF1ZXN0GisuZGVtby5sZWFkZXJib2FyZC52MS5HZXRMZWFk",
+            "ZXJib2FyZFJlc3BvbnNlEnIKEURlbGV0ZUxlYWRlcmJvYXJkEi0uZGVtby5s",
+            "ZWFkZXJib2FyZC52MS5EZWxldGVMZWFkZXJib2FyZFJlcXVlc3QaLi5kZW1v",
+            "LmxlYWRlcmJvYXJkLnYxLkRlbGV0ZUxlYWRlcmJvYXJkUmVzcG9uc2USYwoM",
+            "U3VibWl0U2NvcmVzEiguZGVtby5sZWFkZXJib2FyZC52MS5TdWJtaXRTY29y",
+            "ZXNSZXF1ZXN0GikuZGVtby5sZWFkZXJib2FyZC52MS5TdWJtaXRTY29yZXNS",
+            "ZXNwb25zZRJaCglHZXRTY29yZXMSJS5kZW1vLmxlYWRlcmJvYXJkLnYxLkdl",
+            "dFNjb3Jlc1JlcXVlc3QaJi5kZW1vLmxlYWRlcmJvYXJkLnYxLkdldFNjb3Jl",
+            "c1Jlc3BvbnNlEmAKC1Jlc2V0U2NvcmVzEicuZGVtby5sZWFkZXJib2FyZC52",
+            "MS5SZXNldFNjb3Jlc1JlcXVlc3QaKC5kZW1vLmxlYWRlcmJvYXJkLnYxLlJl",
+            "c2V0U2NvcmVzUmVzcG9uc2VCcQoXY29tLmRlbW8ubGVhZGVyYm9hcmQudjFC",
+            "E0xlYWRlcmJvYXJkQXBpUHJvdG9QAVoNbGVhZGVyYm9hcmR2MaICA0RMWKoC",
+            "E0RlbW8uTGVhZGVyYm9hcmQuVjHKAhNEZW1vXExlYWRlcmJvYXJkXFYxYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Demo.Leaderboard.V1.LeaderboardReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Demo.Leaderboard.V1.CreateLeaderboardRequest), global::Demo.Leaderboard.V1.CreateLeaderboardRequest.Parser, new[]{ "Leaderboard" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Demo.Leaderboard.V1.CreateLeaderboardResponse), global::Demo.Leaderboard.V1.CreateLeaderboardResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Demo.Leaderboard.V1.GetLeaderboardRequest), global::Demo.Leaderboard.V1.GetLeaderboardRequest.Parser, new[]{ "LaderboardId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Demo.Leaderboard.V1.GetLeaderboardRequest), global::Demo.Leaderboard.V1.GetLeaderboardRequest.Parser, new[]{ "LeaderboardId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Demo.Leaderboard.V1.GetLeaderboardResponse), global::Demo.Leaderboard.V1.GetLeaderboardResponse.Parser, new[]{ "Leaderboard" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Demo.Leaderboard.V1.DeleteLeaderboardRequest), global::Demo.Leaderboard.V1.DeleteLeaderboardRequest.Parser, new[]{ "LeaderboardId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Demo.Leaderboard.V1.DeleteLeaderboardResponse), global::Demo.Leaderboard.V1.DeleteLeaderboardResponse.Parser, null, null, null, null, null),
@@ -343,7 +343,7 @@ namespace Demo.Leaderboard.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public GetLeaderboardRequest(GetLeaderboardRequest other) : this() {
-      laderboardId_ = other.laderboardId_;
+      leaderboardId_ = other.leaderboardId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -352,17 +352,17 @@ namespace Demo.Leaderboard.V1 {
       return new GetLeaderboardRequest(this);
     }
 
-    /// <summary>Field number for the "laderboard_id" field.</summary>
-    public const int LaderboardIdFieldNumber = 1;
-    private string laderboardId_ = "";
+    /// <summary>Field number for the "leaderboard_id" field.</summary>
+    public const int LeaderboardIdFieldNumber = 1;
+    private string leaderboardId_ = "";
     /// <summary>
     /// Unique identifier for the leaderboard.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string LaderboardId {
-      get { return laderboardId_; }
+    public string LeaderboardId {
+      get { return leaderboardId_; }
       set {
-        laderboardId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        leaderboardId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -379,14 +379,14 @@ namespace Demo.Leaderboard.V1 {
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (LaderboardId != other.LaderboardId) return false;
+      if (LeaderboardId != other.LeaderboardId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (LaderboardId.Length != 0) hash ^= LaderboardId.GetHashCode();
+      if (LeaderboardId.Length != 0) hash ^= LeaderboardId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -400,9 +400,9 @@ namespace Demo.Leaderboard.V1 {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (LaderboardId.Length != 0) {
+      if (LeaderboardId.Length != 0) {
         output.WriteRawTag(10);
-        output.WriteString(LaderboardId);
+        output.WriteString(LeaderboardId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -412,8 +412,8 @@ namespace Demo.Leaderboard.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (LaderboardId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(LaderboardId);
+      if (LeaderboardId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LeaderboardId);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -426,8 +426,8 @@ namespace Demo.Leaderboard.V1 {
       if (other == null) {
         return;
       }
-      if (other.LaderboardId.Length != 0) {
-        LaderboardId = other.LaderboardId;
+      if (other.LeaderboardId.Length != 0) {
+        LeaderboardId = other.LeaderboardId;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -441,7 +441,7 @@ namespace Demo.Leaderboard.V1 {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
-            LaderboardId = input.ReadString();
+            LeaderboardId = input.ReadString();
             break;
           }
         }
