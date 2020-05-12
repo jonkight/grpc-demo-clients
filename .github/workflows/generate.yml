@@ -1,0 +1,25 @@
+name: Generate Protobuf & gRPC Stubs
+
+on: pull_request
+
+jobs:
+  vm-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+      - name: Prototool break check, format, and generate
+        run: |
+          rm -rf gen
+          docker run -v "$(pwd):/work" uber/prototool:latest prototool break check
+          docker run -v "$(pwd):/work" uber/prototool:latest prototool format -f -w
+          docker run -v "$(pwd):/work" uber/prototool:latest prototool generate proto
+      - name: Update the branch if there are changes
+        run: |
+          sudo git config --local user.email "action@github.com"
+          sudo git config --local user.name "GitHub Action"
+          sudo git add --all gen/
+          sudo git diff --quiet && git diff --staged --quiet || sudo git commit -m 'Generating stubs' && sudo git push origin HEAD:${{ github.head_ref }}
