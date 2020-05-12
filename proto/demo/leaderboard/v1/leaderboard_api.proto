@@ -39,7 +39,7 @@ message CreateLeaderboardResponse {}
 
 message GetLeaderboardRequest {
   // Unique identifier for the leaderboard.
-  string laderboard_id = 1;
+  string leaderboard_id = 1;
 }
 
 message GetLeaderboardResponse {
