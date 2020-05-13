@@ -32,7 +32,7 @@ service LeaderboardAPI {
 
 message CreateLeaderboardRequest {
   // Leaderboard definition metadata.
-  demo.leaderboard.v1.Leaderboard leaderboard = 1;
+  Leaderboard leaderboard = 1;
 }
 
 message CreateLeaderboardResponse {}
@@ -44,7 +44,7 @@ message GetLeaderboardRequest {
 
 message GetLeaderboardResponse {
   // Leaderboard definition metadata.
-  demo.leaderboard.v1.Leaderboard leaderboard = 1;
+  Leaderboard leaderboard = 1;
 }
 
 message DeleteLeaderboardRequest {
@@ -61,12 +61,12 @@ message GetScoresRequest {
 
 message GetScoresResponse {
   // Leaderboard scores in order of ranking based on the rank order.
-  repeated demo.leaderboard.v1.LeaderboardScore rankings = 1;
+  repeated LeaderboardScore rankings = 1;
 }
 
 message SubmitScoresRequest {
   // Score the user achieved.
-  demo.leaderboard.v1.LeaderboardScore score = 1;
+  LeaderboardScore score = 1;
 }
 
 message SubmitScoresResponse {}

@@ -1,0 +1,40 @@
+// Copyright (c) 2020 jonkight.
+
+syntax = "proto3";
+
+package demo.user.v1;
+
+option csharp_namespace = "Demo.User.V1";
+option go_package = "userv1";
+option java_multiple_files = true;
+option java_outer_classname = "UserApiProto";
+option java_package = "com.demo.user.v1";
+option objc_class_prefix = "DUX";
+option php_namespace = "Demo\\User\\V1";
+
+import "demo/user/v1/user.proto";
+
+// Service API for interacting with users.
+service UserAPI {
+  // Creates a user.
+  rpc CreateUser(CreateUserRequest) returns (CreateUserResponse);
+  // Retrieves a user.
+  rpc GetUser(GetUserRequest) returns (GetUserResponse);
+}
+
+message CreateUserRequest {
+  // The user metadata.
+  User user = 1;
+}
+
+message CreateUserResponse {}
+
+message GetUserRequest {
+  // Unique identifier for the user.
+  string user_id = 1;
+}
+
+message GetUserResponse {
+  // The user metadata.
+  User user = 1;
+}
