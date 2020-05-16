@@ -8,12 +8,17 @@ generate:
   go_options:
     import_path: github.com/jonkight/grpc-demo-clients/proto
   plugins:
+    - name: cpp
+      output: ../gen/cpp
+    - name: csharp
+      output: ../gen/csharp
     - name: go
       type: go
       flags: plugins=grpc
       output: ../gen/go
-    - name: csharp
-      output: ../gen/csharp
+    - name: grpc-cpp
+      path: grpc_cpp_plugin
+      output: ../gen/cpp
     - name: grpc-csharp
       path: grpc_csharp_plugin
       output: ../gen/csharp
