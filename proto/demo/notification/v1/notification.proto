@@ -13,6 +13,7 @@ option objc_class_prefix = "DNX";
 option php_namespace = "Demo\\Notification\\V1";
 
 import "google/protobuf/any.proto";
+import "google/protobuf/timestamp.proto";
 
 // Represents a wrapper for a notification.
 message Notification {
@@ -20,4 +21,12 @@ message Notification {
   string notification_id = 1;
   // Generic message data that contains the notification.
   google.protobuf.Any data = 2;
+}
+
+// A notifcation from the system.
+message SystemUpdate {
+  // Message from the system.
+  string message = 1;
+  // Timestamp of when the update occurred.
+  google.protobuf.Timestamp update_timestamp = 2;
 }

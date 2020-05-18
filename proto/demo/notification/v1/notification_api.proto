@@ -20,6 +20,6 @@ service NotificationApi {
 }
 
 message SubscribeRequest {
-  // Scope of subscription as a wild card (default: '*' for all notifications)
+  // Scope of subscription as a wild card. (default: '*' for all notifications)
   string scope = 1;
 }
