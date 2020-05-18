@@ -26,15 +26,19 @@ namespace Demo.Notification.V1 {
           string.Concat(
             "CidkZW1vL25vdGlmaWNhdGlvbi92MS9ub3RpZmljYXRpb24ucHJvdG8SFGRl",
             "bW8ubm90aWZpY2F0aW9uLnYxGhlnb29nbGUvcHJvdG9idWYvYW55LnByb3Rv",
-            "IksKDE5vdGlmaWNhdGlvbhIXCg9ub3RpZmljYXRpb25faWQYASABKAkSIgoE",
-            "ZGF0YRgCIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlCcwoYY29tLmRlbW8u",
-            "bm90aWZpY2F0aW9uLnYxQhFOb3RpZmljYXRpb25Qcm90b1ABWg5ub3RpZmlj",
-            "YXRpb252MaICA0ROWKoCFERlbW8uTm90aWZpY2F0aW9uLlYxygIURGVtb1xO",
-            "b3RpZmljYXRpb25cVjFiBnByb3RvMw=="));
+            "Gh9nb29nbGUvcHJvdG9idWYvdGltZXN0YW1wLnByb3RvIksKDE5vdGlmaWNh",
+            "dGlvbhIXCg9ub3RpZmljYXRpb25faWQYASABKAkSIgoEZGF0YRgCIAEoCzIU",
+            "Lmdvb2dsZS5wcm90b2J1Zi5BbnkiVQoMU3lzdGVtVXBkYXRlEg8KB21lc3Nh",
+            "Z2UYASABKAkSNAoQdXBkYXRlX3RpbWVzdGFtcBgCIAEoCzIaLmdvb2dsZS5w",
+            "cm90b2J1Zi5UaW1lc3RhbXBCcwoYY29tLmRlbW8ubm90aWZpY2F0aW9uLnYx",
+            "QhFOb3RpZmljYXRpb25Qcm90b1ABWg5ub3RpZmljYXRpb252MaICA0ROWKoC",
+            "FERlbW8uTm90aWZpY2F0aW9uLlYxygIURGVtb1xOb3RpZmljYXRpb25cVjFi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.AnyReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Demo.Notification.V1.Notification), global::Demo.Notification.V1.Notification.Parser, new[]{ "NotificationId", "Data" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Demo.Notification.V1.Notification), global::Demo.Notification.V1.Notification.Parser, new[]{ "NotificationId", "Data" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Demo.Notification.V1.SystemUpdate), global::Demo.Notification.V1.SystemUpdate.Parser, new[]{ "Message", "UpdateTimestamp" }, null, null, null, null)
           }));
     }
     #endregion
@@ -205,6 +209,178 @@ namespace Demo.Notification.V1 {
               Data = new global::Google.Protobuf.WellKnownTypes.Any();
             }
             input.ReadMessage(Data);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// A notifcation from the system.
+  /// </summary>
+  public sealed partial class SystemUpdate : pb::IMessage<SystemUpdate> {
+    private static readonly pb::MessageParser<SystemUpdate> _parser = new pb::MessageParser<SystemUpdate>(() => new SystemUpdate());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SystemUpdate> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Demo.Notification.V1.NotificationReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SystemUpdate() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SystemUpdate(SystemUpdate other) : this() {
+      message_ = other.message_;
+      updateTimestamp_ = other.updateTimestamp_ != null ? other.updateTimestamp_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SystemUpdate Clone() {
+      return new SystemUpdate(this);
+    }
+
+    /// <summary>Field number for the "message" field.</summary>
+    public const int MessageFieldNumber = 1;
+    private string message_ = "";
+    /// <summary>
+    /// Message from the system.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Message {
+      get { return message_; }
+      set {
+        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "update_timestamp" field.</summary>
+    public const int UpdateTimestampFieldNumber = 2;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp updateTimestamp_;
+    /// <summary>
+    /// Timestamp of when the update occurred.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp UpdateTimestamp {
+      get { return updateTimestamp_; }
+      set {
+        updateTimestamp_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SystemUpdate);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SystemUpdate other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Message != other.Message) return false;
+      if (!object.Equals(UpdateTimestamp, other.UpdateTimestamp)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Message.Length != 0) hash ^= Message.GetHashCode();
+      if (updateTimestamp_ != null) hash ^= UpdateTimestamp.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Message.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Message);
+      }
+      if (updateTimestamp_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(UpdateTimestamp);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Message.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
+      }
+      if (updateTimestamp_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdateTimestamp);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SystemUpdate other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Message.Length != 0) {
+        Message = other.Message;
+      }
+      if (other.updateTimestamp_ != null) {
+        if (updateTimestamp_ == null) {
+          UpdateTimestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        UpdateTimestamp.MergeFrom(other.UpdateTimestamp);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Message = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (updateTimestamp_ == null) {
+              UpdateTimestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(UpdateTimestamp);
             break;
           }
         }

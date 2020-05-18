@@ -81,7 +81,7 @@ namespace Demo.Notification.V1 {
     public const int ScopeFieldNumber = 1;
     private string scope_ = "";
     /// <summary>
-    /// Scope of subscription as a wild card (default: '*' for all notifications)
+    /// Scope of subscription as a wild card. (default: '*' for all notifications)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string Scope {

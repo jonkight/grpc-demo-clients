@@ -23,7 +23,7 @@ var _ = math.Inf
 const _ = proto.ProtoPackageIsVersion3 // please upgrade the proto package
 
 type SubscribeRequest struct {
-	// Scope of subscription as a wild card (default: '*' for all notifications)
+	// Scope of subscription as a wild card. (default: '*' for all notifications)
 	Scope                string   `protobuf:"bytes,1,opt,name=scope,proto3" json:"scope,omitempty"`
 	XXX_NoUnkeyedLiteral struct{} `json:"-"`
 	XXX_unrecognized     []byte   `json:"-"`
