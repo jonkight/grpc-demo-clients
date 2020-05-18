@@ -1,0 +1,25 @@
+// Copyright (c) 2020 jonkight.
+
+syntax = "proto3";
+
+package demo.notification.v1;
+
+option csharp_namespace = "Demo.Notification.V1";
+option go_package = "notificationv1";
+option java_multiple_files = true;
+option java_outer_classname = "NotificationApiProto";
+option java_package = "com.demo.notification.v1";
+option objc_class_prefix = "DNX";
+option php_namespace = "Demo\\Notification\\V1";
+
+import "demo/notification/v1/notification.proto";
+
+// Service API for receiving notifications from the platform.
+service NotificationApi {
+  rpc Subscribe(SubscribeRequest) returns (stream Notification);
+}
+
+message SubscribeRequest {
+  // Scope of subscription as a wild card (default: '*' for all notifications)
+  string scope = 1;
+}
