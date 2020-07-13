@@ -7,7 +7,7 @@ package demo.greeter.v1;
 option csharp_namespace = "Demo.Greeter.V1";
 option go_package = "greeterv1";
 option java_multiple_files = true;
-option java_outer_classname = "GreeterProto";
+option java_outer_classname = "GeeterApiProto";
 option java_package = "com.demo.greeter.v1";
 option objc_class_prefix = "DGX";
 option php_namespace = "Demo\\Greeter\\V1";
