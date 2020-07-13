@@ -12,9 +12,9 @@ option java_package = "com.demo.greeter.v1";
 option objc_class_prefix = "DGX";
 option php_namespace = "Demo\\Greeter\\V1";
 
-// The greeting service definition.
-service Greeter {
-  // Sends a greeting
+// Service API for interacting with greetings.
+service GreeterAPI {
+  // Sends a greeting.
   rpc SayHello (HelloRequest) returns (HelloResponse);
 }
 
